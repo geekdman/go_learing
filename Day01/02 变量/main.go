@@ -3,7 +3,29 @@ package main
 import "fmt"
 
 /*
-	1、go定义的变量必须被调用，不然会报错
+作者： dman
+标题： 变量
+内容：
+	1、 变量声明，格式如下：
+		标准定义
+			var name type = expression
+		其中 type 和 expression 可以省略其中一个，但是不能同时省略
+			var name type            常用于变量的批量定义,或者结构体的定义
+			var name = expression    常用于常量定义
+        短变量声明
+			name := expression       常用于接受函数返回值,或者局部变量
+    2、变量赋值
+       变量名 = 值
+       变量名 = 值+ 值
+       变量名 = 变量名
+	3、匿名变量
+		匿名变量 就是没有命名的变量,在使用多重赋值的时候,如果想要忽略某个值, 可以使用匿名变量, 匿名变量使用一个下划线表示。
+		用途： 常用在接受函数返回值的场景
+	4、变量命名规则
+
+变量注意事项:
+
+	1、Go语言中定义的变量，必须被调用，不然编译的时候会报错
 		报错如下：
 		// .\main.go:4:6: x declared and not used
 
@@ -29,6 +51,19 @@ import "fmt"
 */
 
 func main() {
+	//1、 变量声明
+	var v1 int = 100 // 标准声明，var name type = expression
+	fmt.Println(v1)
+
+	var v2 = 100 // 省略 type 声明,
+	fmt.Println(v2)
+
+	var v3 int // 省略expression 声明,
+	fmt.Println(v3)
+
+	v4 := 100
+	fmt.Println(v4) // 短变量声明
+	//2、匿名变量
 
 	var x = 100
 	fmt.Println(x)
