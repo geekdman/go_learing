@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 )
 
 /*
@@ -27,5 +28,6 @@ func main() {
 	s := `{"name":"tom","age":"18"}`
 	var data []map[string]string
 	json.Unmarshal([]byte(s), &data)
+	fmt.Println(data)
 
 }

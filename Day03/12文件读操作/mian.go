@@ -16,7 +16,6 @@ func ReadBytes(file *os.File) {
 	fmt.Println(data)
 	//byte 转换成 string
 	fmt.Println(string(data))
-
 }
 
 // 按照line读
