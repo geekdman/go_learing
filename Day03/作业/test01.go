@@ -42,6 +42,7 @@ func UpdateCoustomer(customers *[]map[string]interface{}, customer map[string]in
 	}
 }
 
+<<<<<<< Updated upstream:Day03/作业/main.go
 func WriteBytesOrstr(filename string,data []byte) {
 	file, err := os.OpenFile(filename, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0666)
 	if err !=nil {
@@ -50,6 +51,9 @@ func WriteBytesOrstr(filename string,data []byte) {
 	//file.Write([]byte(str))
 	file.WriteString(string(data))
 }
+=======
+func Main() {
+>>>>>>> Stashed changes:Day03/作业/test01.go
 
 func main() {
 
