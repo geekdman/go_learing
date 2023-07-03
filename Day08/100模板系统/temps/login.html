@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ . }}
+<p>{{ .booksSlice}}</p>
+<p>{{ index .booksSlice 2 }}</p>   <!--取第三个值-->
+<p>{{ .stuMap}}</p>
+<p>{{ .stuMap.name}}</p>
+</body>
+</html>

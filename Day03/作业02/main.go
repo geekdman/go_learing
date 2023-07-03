@@ -45,7 +45,7 @@ func DeleteCoustomer() {
 	}
 }
 
-// 更新环境
+// 查询客户
 func QueryCoustomer() {
 	fmt.Print("查看客户：")
 	fmt.Println("customers:::", customers)
@@ -55,6 +55,8 @@ func QueryCoustomer() {
 		fmt.Println("-------------------------------------------------")
 	}
 }
+
+// 更新客户
 func UpdateCoustomer() {
 	fmt.Println("请输入客户编号：")
 	fmt.Scan(&id)
